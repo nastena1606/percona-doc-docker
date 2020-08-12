@@ -4,8 +4,6 @@ Docker files for [Percona Monitoring and Management](percona.com/doc/percona-mon
 
 - `mkdocs`: An Alpine-based image for building PMM's forthcoming MkDocs/Markdown documentation set for Percona Monitoring and Management (PMM)
 
-- `sphinx`: Empty. (For future use.)
-
 ## Contents
 
 Alpine packages:
