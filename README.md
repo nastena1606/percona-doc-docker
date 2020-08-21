@@ -1,6 +1,6 @@
-# pmm-doc-docker
+# percona-doc-docker
 
-Docker files for [Percona Monitoring and Management](percona.com/doc/percona-monitoring-and-management/2.x/) documentation builds.
+Docker files for [Percona](percona.com/doc/) documentation builds.
 
 - `mkdocs`: An Alpine-based image for building PMM's forthcoming MkDocs/Markdown documentation set for Percona Monitoring and Management (PMM)
 
