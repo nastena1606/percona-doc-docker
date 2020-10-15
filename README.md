@@ -2,9 +2,12 @@
 
 Docker files for [Percona](https://www.percona.com/software/documentation/) documentation builds.
 
-- `mkdocs`: An Alpine-based image for building PMM's forthcoming MkDocs/Markdown documentation set for Percona Monitoring and Management (PMM)
+- `mkdocs`: An Alpine-based image for building MkDocs/Markdown documentation.
+- `sphinx`: Based on the official [Sphinx](https://hub.docker.com/u/sphinxdoc) `sphinxdoc/sphinx` image.
 
 ## Contents
+
+### MkDocs image
 
 Alpine packages:
 
@@ -33,4 +36,14 @@ MkDocs packages and plugins:
 - [mkdocs-material](https://pypi.org/project/mkdocs-material/)
 - [mkdocs-with-pdf](https://pypi.org/project/mkdocs-with-pdf/) - Depends on [WeasyPrint](https://weasyprint.readthedocs.io/) which depends on `py3-cairocffi` which doesn't have a wheel and for which the Alpine package is currently in the testing repo and is hence installed separately.
 
+### Sphinx image
 
+Sphinx extensions:
+
+- [sphinx-copybutton](https://sphinx-copybutton.readthedocs.io/) Adds a copy button to code blocks.
+- [sphinx-tabs](https://pypi.org/project/sphinx-tabs/) Allows for tabbed content blocks.
+- [sphinx_markdown_builder](https://pypi.org/project/sphinx-markdown-builder/) Writes Markdown files from rst sources.
+- [sphinx_markdown_parser](https://pypi.org/project/sphinx-markdown-parser/) Allows for Markdown files in a Sphinx/rst project.
+- [sphinxcontrib-srclinks](https://pypi.org/project/sphinxcontrib-srclinks/) Adds various page links (e.g. to Github) to navigation bar.
+- [sphinx-reload](https://pypi.org/project/sphinx-reload/) Automatically rebuilds and serves a Sphinx project.
+- [pymdown-extensions](https://facelessuser.github.io/pymdown-extensions/)

@@ -1,5 +1,7 @@
 sphinx-copybutton
 sphinx-tabs
 sphinx_markdown_builder
+sphinx_markdown_parser
 sphinxcontrib-srclinks
 sphinx-reload
+pymdown-extensions
