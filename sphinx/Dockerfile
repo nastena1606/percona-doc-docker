@@ -1,6 +1,6 @@
 FROM sphinxdoc/sphinx
-WORKDIR /docs
-ADD requirements.txt /docs
+WORKDIR /doc
+ADD requirements.txt /doc
 RUN apt-get update \
  && apt-get install -y wget \
  && apt-get autoremove \

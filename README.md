@@ -5,6 +5,35 @@ Docker files for [Percona](https://www.percona.com/software/documentation/) docu
 - `mkdocs`: An Alpine-based image for building MkDocs/Markdown documentation.
 - `sphinx`: Based on the official [Sphinx](https://hub.docker.com/u/sphinxdoc) `sphinxdoc/sphinx` image.
 
+## Usage
+
+### MkDocs projects
+
+Perform a build (`mkdocs build`):
+
+```sh
+docker run --rm -v $(pwd):/docs perconalab/pmm-doc-md
+```
+
+Run the live preview local server (`mkdocs serve`):
+
+```sh
+docker run --rm -p 8000:8000 -v $(pwd):/docs perconalab/pmm-doc-md mkdocs serve -a 0.0.0.0:8000
+```
+
+Open your browser at <http://localhost:8000>
+
+### Sphinx projects
+
+```sh
+docker run --rm -v $(pwd):/doc perconalab/percona-doc-sphinx make clean html
+```
+
+Assumes a `./Makefile` and Sphinx source files in `./source`.
+
+> Note: This image is only for HTML builds.
+
+
 ## Contents
 
 ### MkDocs image
