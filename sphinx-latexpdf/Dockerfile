@@ -1,4 +1,4 @@
-FROM sphinxdoc/sphinx
+FROM sphinxdoc/sphinx-latexpdf
 WORKDIR /docs
 ADD requirements.txt /docs
 RUN apt-get update \
