@@ -26,7 +26,7 @@ Open your browser at <http://localhost:8000>
 ### Sphinx projects
 
 ```sh
-docker run --rm -v $(pwd):/doc perconalab/percona-doc-sphinx make clean html
+docker run --rm -v $(pwd):/docs perconalab/percona-doc-sphinx make clean html
 ```
 
 Assumes a `./Makefile` and Sphinx source files in `./source`.
