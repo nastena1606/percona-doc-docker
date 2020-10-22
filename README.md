@@ -25,14 +25,19 @@ Open your browser at <http://localhost:8000>
 
 ### Sphinx projects
 
+For HTML:
+
 ```sh
 docker run --rm -v $(pwd):/docs perconalab/percona-doc-sphinx make clean html
 ```
 
-Assumes a `./Makefile` and Sphinx source files in `./source`.
+For PDF:
 
-> Note: This image is only for HTML builds.
+```sh
+docker run --rm -v $(pwd):/docs perconalab/percona-doc-sphinx-latexpdf make latexpdf
+```
 
+Both assume a `./Makefile` and Sphinx source files in `./source`.
 
 ## Contents
 
