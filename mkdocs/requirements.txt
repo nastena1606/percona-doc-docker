@@ -3,4 +3,5 @@ mkdocs-macros-plugin
 mkdocs-exclude
 mkdocs-material
 mkdocs-with-pdf>=0.8.0
+mkdocs-mermaid2-plugin
 markdown-blockdiag
