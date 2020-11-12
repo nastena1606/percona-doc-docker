@@ -60,6 +60,7 @@ For MkDocs, MkDocs plugins and dependencies (mainly [WeasyPrint](https://weasypr
 - musl-dev
 - pango-dev
 - zlib-dev
+- graphviz
 
 MkDocs packages and plugins:
 
