@@ -61,6 +61,7 @@ For MkDocs, MkDocs plugins and dependencies (mainly [WeasyPrint](https://weasypr
 - pango-dev
 - zlib-dev
 - graphviz
+- git (for mkdocs-git-revision-date-plugin)
 
 MkDocs packages and plugins:
 
@@ -72,7 +73,7 @@ MkDocs packages and plugins:
 - [mkdocs-with-pdf](https://pypi.org/project/mkdocs-with-pdf/) - Depends on [WeasyPrint](https://weasyprint.readthedocs.io/) which depends on `py3-cairocffi` which doesn't have a wheel and for which the Alpine package is currently in the testing repo and is hence installed separately.
 - [mkdocs-mermaid2-plugin](https://github.com/fralau/mkdocs-mermaid2-plugin) - For [mermaid](https://mermaid-js.github.io/mermaid/) diagrams.
 - [plantuml-markdown](https://github.com/mikitex70/plantuml-markdown) - For [PlantUML](https://plantuml.com/) diagrams.
-
+- [mkdocs-git-revision-date-plugin](https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin)
 
 ### Sphinx image
 
