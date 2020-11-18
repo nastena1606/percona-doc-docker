@@ -1,9 +1,10 @@
 # percona-doc-docker
 
-Docker files for [Percona](https://www.percona.com/software/documentation/) documentation builds.
+Docker images that include dependencies for building Sphinx- and MkDocs-based [Percona](https://www.percona.com/software/documentation/) documentation.
 
 - `mkdocs`: An Alpine-based image for building MkDocs/Markdown documentation.
-- `sphinx`: Based on the official [Sphinx](https://hub.docker.com/u/sphinxdoc) `sphinxdoc/sphinx` image.
+- `sphinx`: Based on the official [Sphinx](https://hub.docker.com/r/sphinxdoc/sphinx) `sphinxdoc/sphinx` image.
+- `sphinx-latexpdf`: Based on the official [Sphinx](https://hub.docker.com/r/sphinxdoc/sphinx-latexpdf) `sphinxdoc/sphinx-latexpdf` image.
 
 ## Usage
 
@@ -49,7 +50,7 @@ Alpine packages:
 - python3-dev
 - py-pip
 
-For MkDocs, MkDocs plugins and dependencies (mainly [WeasyPrint](https://weasyprint.org/)):
+For MkDocs, MkDocs plugins and dependencies:
 
 - build-base
 - cairo-dev
@@ -65,15 +66,16 @@ For MkDocs, MkDocs plugins and dependencies (mainly [WeasyPrint](https://weasypr
 
 MkDocs packages and plugins:
 
-- [mkdocs](https://www.mkdocs.org/)
-- [mkdocs-macros-plugin](https://pypi.org/project/mkdocs-macros-plugin/)
-- [mkdocs-exclude](https://pypi.org/project/mkdocs-exclude/)
+- [mkdocs](https://www.mkdocs.org/) - MkDocs itself.
+- [mkdocs-macros-plugin](https://pypi.org/project/mkdocs-macros-plugin/) - Various useful macros.
+- [mkdocs-exclude](https://pypi.org/project/mkdocs-exclude/) - For excluding files from MkDocs processing.
+- [markdown-include](https://pypi.org/project/markdown-include/) - For including .md files in others.
 - [mkdocs-table-reader-plugin](https://pypi.org/project/mkdocs-table-reader-plugin/)
-- [mkdocs-material](https://pypi.org/project/mkdocs-material/)
+- [mkdocs-material](https://pypi.org/project/mkdocs-material/) - Base theme.
 - [mkdocs-with-pdf](https://pypi.org/project/mkdocs-with-pdf/) - Depends on [WeasyPrint](https://weasyprint.readthedocs.io/) which depends on `py3-cairocffi` which doesn't have a wheel and for which the Alpine package is currently in the testing repo and is hence installed separately.
 - [mkdocs-mermaid2-plugin](https://github.com/fralau/mkdocs-mermaid2-plugin) - For [mermaid](https://mermaid-js.github.io/mermaid/) diagrams.
 - [plantuml-markdown](https://github.com/mikitex70/plantuml-markdown) - For [PlantUML](https://plantuml.com/) diagrams.
-- [mkdocs-git-revision-date-plugin](https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin)
+- [mkdocs-git-revision-date-plugin](https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin) - For 'date last changed' page information.
 
 ### Sphinx image
 
