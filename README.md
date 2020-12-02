@@ -70,13 +70,11 @@ MkDocs packages and plugins:
 - [mkdocs-macros-plugin](https://pypi.org/project/mkdocs-macros-plugin/) - Various useful macros.
 - [mkdocs-exclude](https://pypi.org/project/mkdocs-exclude/) - For excluding files from MkDocs processing.
 - [markdown-include](https://pypi.org/project/markdown-include/) - For including .md files in others.
-- [mkdocs-table-reader-plugin](https://pypi.org/project/mkdocs-table-reader-plugin/)
 - [mkdocs-material](https://pypi.org/project/mkdocs-material/) - Base theme.
 - [mkdocs-with-pdf](https://pypi.org/project/mkdocs-with-pdf/) - Depends on [WeasyPrint](https://weasyprint.readthedocs.io/) which depends on `py3-cairocffi` which doesn't have a wheel and for which the Alpine package is currently in the testing repo and is hence installed separately.
-- [mkdocs-mermaid2-plugin](https://github.com/fralau/mkdocs-mermaid2-plugin) - For [mermaid](https://mermaid-js.github.io/mermaid/) diagrams.
 - [plantuml-markdown](https://github.com/mikitex70/plantuml-markdown) - For [PlantUML](https://plantuml.com/) diagrams.
 - [mkdocs-git-revision-date-plugin](https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin) - For 'date last changed' page information.
-- [mkdocs-redirects/](https://pypi.org/project/mkdocs-redirects/) - For managing structural changes.
+- [mkdocs-material-extensions](https://pypi.org/project/mkdocs-material-extensions/) - For icons.
 
 
 ### Sphinx image
