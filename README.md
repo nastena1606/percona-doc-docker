@@ -63,6 +63,8 @@ For MkDocs, MkDocs plugins and dependencies:
 - zlib-dev
 - graphviz
 - git (for mkdocs-git-revision-date-plugin)
+- OpenJDK11 (for PlantUML)
+- font-noto & ttf-inconsolata (fonts)
 
 MkDocs packages and plugins:
 
@@ -76,6 +78,9 @@ MkDocs packages and plugins:
 - [mkdocs-git-revision-date-plugin](https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin) - For 'date last changed' page information.
 - [mkdocs-material-extensions](https://pypi.org/project/mkdocs-material-extensions/) - For icons.
 
+Additional Fonts:
+
+- [Chivo](https://fonts.google.com/specimen/Chivo) - To match Percona.com website theme.
 
 ### Sphinx image
 
