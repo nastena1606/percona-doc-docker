@@ -77,6 +77,8 @@ MkDocs packages and plugins:
 - [plantuml-markdown](https://github.com/mikitex70/plantuml-markdown) - For [PlantUML](https://plantuml.com/) diagrams.
 - [mkdocs-git-revision-date-plugin](https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin) - For 'date last changed' page information.
 - [mkdocs-material-extensions](https://pypi.org/project/mkdocs-material-extensions/) - For icons.
+- [mkdocs-bootstrap-tables-plugin](https://github.com/byrnereese/mkdocs-bootstrap-tables-plugin) - Adds a bootstrap class to tables making them render better.
+- [mike](https://github.com/jimporter/mike) - Tool for building and managing versions.
 
 Additional Fonts:
 
