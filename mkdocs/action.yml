@@ -1,0 +1,5 @@
+name: 'PMM MkDocs'
+description: 'Run MkDocs (via mike) to build PMM docs'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
