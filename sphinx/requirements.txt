@@ -5,3 +5,4 @@ sphinx_markdown_parser
 sphinxcontrib-srclinks
 sphinx-reload
 pymdown-extensions
+sphinx_gitstamp
